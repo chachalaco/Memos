@@ -56,7 +56,7 @@
             $_SESSION["toastmesaje"] = $toastmensaje;
             header('location: principal.php'); //Nos vamos a las notas y el calendario
         }
-        else { //El usuario no pone fien su contraseña
+        else { //El usuario no pone bien su contraseña
             $toastmensaje = toast(FALSE, "Correo o Contraseña Incorrectos");
             $_SESSION['toastmesaje'] = $toastmensaje;
             header('location: index.php');

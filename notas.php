@@ -25,7 +25,7 @@
         case '5':
             loadNota($conexion);
             break;
-        case '6':
+        case '6': // Función NO IMPREMENTADA
             buscarNota($conexion);
             break;    
         default:

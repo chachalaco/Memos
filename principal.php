@@ -37,6 +37,8 @@
 
     <!-- Inicializando el calendario -->
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+
+    <!-- Aqui el calendario IMPLEMENTAR: Vistas -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
