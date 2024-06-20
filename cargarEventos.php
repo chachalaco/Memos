@@ -3,7 +3,7 @@ include "conexiondb.php";
 
 $id_usuario = $_SESSION["idUsuario"];
 
-$sql = "SELECT Descripcion, fechaAgendada, Color, imagen
+$sql = "SELECT Descripcion, fechaAgendada, Color 
         FROM nota
         WHERE idUsuario = '$id_usuario';";
 
@@ -25,48 +25,37 @@ if ($resultado->num_rows > 0) {
         $eve = array(
             "Descripcion" => $fila["Descripcion"],
             "fechaAgendada" => $fila["fechaAgendada"],
-            "Color" => $fila["Color"],
-            'imagen' => $fila['imagen']
+            "Color" => $fila["Color"]
         );
         $cargar[] = $eve;
     }
 
     // Generar el código JavaScript para los eventos del calendario
-    $eventos_js = array();
+    $eventos_js = "";
     foreach ($cargar as $eve) {
         $descrip = $eve["Descripcion"];
         $fecha = $eve["fechaAgendada"];
         $col = $eve["Color"];
-        $img = $eve["imagen"];
-        // 'Rellenamos' el arreglo evento para
-        $evento = array(
-        "title" => $descrip,
-        "start" => $fecha,
-        "color" => $col,
-        "image" => $img,
-        );
-
-        $eventos_js[] = $evento;
+        // 'Rellenamos' el arreglo evento para 
+        $evento = "{ 
+            title: '$descrip', 
+            start: '$fecha',
+            color: '$col'
+        },";
+        $eventos_js .= $evento;
     }
-
-    $eventos_js = json_encode($eventos_js);
 
     // Imprimir el código JavaScript
     echo "<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth',
-            events: $eventos_js,
-            eventContent: function(arg) {
-                var element = document.createElement('div');
-                element.innerHTML = `<div style=\"padding: 10px; white-space: normal;\">${descrip}</div> <img src=\"${img}\" style=\"display: block; margin: 0 auto; width: 50px; height: 50px;\">`;
-                return { html: element.innerHTML };
-            }
-        });
-        calendar.render();
-    });
-</script>";
+            document.addEventListener('DOMContentLoaded', function() {
+                var calendarEl = document.getElementById('calendar');
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
+                    events: [$eventos_js]
+                });
+                calendar.render();
+            });
+        </script>";
 }
 
 ?>
