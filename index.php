@@ -206,7 +206,7 @@
                     </div>
                     <div class="espaciadoRegistro">
                         <div class="col-12 form-floating mb-3 position-relative">
-                            <input type="password" class="form-control" id="floatingPasswordReg" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-_=+{};:,<.>]).{6,10}$" maxlength="10" title="- Al menos una letra minúscula. - Al menos una letra mayúscula. - Al menos un dígito. - Una longitud de máximo 10 y mínimo 6 caracteres" placeholder="Contraseña" onfocus="enablePasswordButtonReg1()" required>
+                            <input type="password" class="form-control" id="floatingPasswordReg" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-_=+{};:,<.>]).{6,10}$" maxlength="20" title="- Al menos una letra minúscula. - Al menos una letra mayúscula. - Al menos un dígito. - Una longitud de máximo 10 y mínimo 6 caracteres" placeholder="Contraseña" onfocus="enablePasswordButtonReg1()" required>
                             <label for="floatingPasswordReg" class="fw-bold">Contraseña</label>
                             <span class="material-symbols-outlined btn position-absolute end-0 top-50 translate-middle-y" id="PassIconReg1" onclick="togglePasswordReg1()">visibility_off</span>
                         </div>
