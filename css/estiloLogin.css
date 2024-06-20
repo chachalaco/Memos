@@ -1,0 +1,109 @@
+/* Boton iniciar sesion */
+#iniciarSesion{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #007bff;
+    color: white;
+}
+#iniciarSesion:hover{
+    background-color: #0056b3;
+}
+
+/* Logo */
+.logoig {
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+}
+.notizenLogoText {
+    margin-left: 0;
+    font-size: 18px;
+    line-height: normal;
+}
+
+/* Div con el correo y contraseña "Espacio" */
+.esp {
+    padding-top: 40px;
+    height: 45%;
+}
+#contenedorBody {
+    height: 300px;
+    margin: 0;
+}
+
+/* Estilo para formulario flotante */
+.form-floating > .form-control {
+    padding: 1.5rem 1rem;
+    height: auto; 
+    color: #000 ; 
+}
+/* Estilo de los label "Correo" */
+#inputCorreo:focus  {
+    margin-left: 1rem;
+}
+
+/* Estilo de los label "Correo" y "Contraseña" */
+.form-floating > label {
+    padding: 0 .75rem;
+    pointer-events: none;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    transform-origin: left center;
+    margin-left: 0.75rem;
+}
+/* Estilo de los label "Correo" y "Contraseña" cuando se enfoca el campo */
+.form-floating > .form-control:focus + label,
+.form-floating > .form-control:not(:placeholder-shown) + label {
+    font-size: 85%; 
+    transform: translateY(-1rem) translateX(.15rem); 
+    margin-left: 0; 
+}
+/* Estilo ícono de visibilidad de la contraseña */
+.material-symbols-outlined.btn {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: #6c757d; 
+    z-index: 10; 
+}
+
+
+/* Ajustar margen solo para el label de "Correo" */
+#floatingInput + label {
+    margin-left: 0.75rem; 
+}
+
+/* Reducir espacio entre correo y contraseña */
+.form-floating.mb-3 {
+    margin-bottom: 2rem !important; 
+}
+
+/* Posicionamiento para el ícono en el campo de contraseña */
+.position-relative .position-absolute.end-0.top-50.translate-middle-y {
+    right: 1.5rem !important; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Desactivar icono de ver contraseña */
+#PassIcon {
+    display: none;
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+    #iniciarSesion {
+        margin-left: -15%;
+    }
+    .esp {
+        height: 4vh;
+    }
+}
