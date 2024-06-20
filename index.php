@@ -24,12 +24,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/estiloLogin.css">
+    <link rel="stylesheet" href="css/login_Registro.css">
     <script src="js/js1.js"></script>
 </head>
 <body>
 <header>
-        <img src="./img/iconoM.png" alt="Logo" class="logo">
+        <img src="./img/icon2.png" alt="Logo" class="logo">
         <nav>          
           <button data-bs-toggle="modal" data-bs-target="#sesion" class="loginButton">Iniciar Sesión</button>
          
@@ -40,11 +40,11 @@
         <section class="banner">
             <div class="text">
                 <div class="notizenLogoContainer">
-                    <img src="./img/Icon2.png" alt="Notizen Logo" class="notizenLogo">
-                    <span class="notizenLogoText">NOTIZEN</span>
+                    <img src="./img/IconoM.png" alt="Logo" class="notizenLogo">
+                    <span class="notizenLogoText">MEMOS</span>
                 </div>
                 <p class="p-as-h1">Crea tu agenda online y mejora tu productividad.</p>
-                <p>Descubre Notizen: Una plataforma diseñada para organizar tus tareas y mejorar tu productividad de manera eficiente. </p>
+                <p>Descubre Memos: Una plataforma diseñada para organizar tus tareas y mejorar tu productividad de manera eficiente. </p>
             </div>
             <img src="./img/Calendario.png" alt="Calendario" class="calendarImage">
         </section>
@@ -53,7 +53,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h3 align="center" class="textCenter texto" id="notizen">¿Qué es Notizen?</h3>
+                <h3 align="center" class="textCenter texto" id="notizen">¿Qué es Memos?</h3>
             </div>
         </div>
         <hr style="color: #2B2D42">
@@ -91,6 +91,7 @@
         </div>
     </div>
 </section>
+
     </main>
 
 <!-- Footer -->
@@ -105,10 +106,12 @@
         <h6 align="center" class="text-uppercase fw-bold mb-4">Contacto</h6>
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
+         
           <p><i class="fas fa-phone me-3"></i>arturo.nava@alumno.buap.mx</p>
           <p><i class="fas fa-phone me-3"></i>diana.floresso@alumno.buap.mx</p>
           <p><i class="fas fa-phone me-3"></i>sergio.rojasg@alumno.buap.mx</p>
           <p><i class="fas fa-phone me-3"></i>eduardo.francisco@alumno.buap.mx</p> 
+          
         </div>
         <!-- Grid column -->
 
@@ -129,7 +132,7 @@
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2024 Copyright:
-    <a class="text-reset fw-bold" href="#">Notizen.com</a>
+    <a class="text-reset fw-bold" href="#">Memos.com</a>
   </div>
   <!-- Copyright -->
 </footer>
@@ -142,21 +145,20 @@
             <form action="sesion.php" method="post">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <div class="col-6"><img src="img/Icon.png" alt="Logo" class="logoig">
-                    <span class="notizenLogoText">NOTIZEN</span>
+                    <div class="col-6"><img src="img/IconoM.png" alt="Logo" class="logoLogin">
+                    <span class="LogoTextLogin">MEMOS</span>
                   </div>
-                    
                     <div class="col-4"><input type="submit" value="Iniciar Sesión" name="tipo" id="iniciarSesion"></div>
                 </div>
                 <!-- Modal body -->
-                <div class="modal-body row" id="contenedorBody">
-                    <div class="esp">
+                <div class="modal-body row" id="contenedorBodyLogin">
+                    <div class="espaciadoLogin">
                     <div class="col-12 form-floating mb-3">
                         <input id="inputCorre" type="email" class="form-control" id="floatingInput" name="usuario" maxlength="50" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="example@example.dominio" placeholder="Correo" required>
                         <label for="floatingInput" class="fw-bold">Correo</label>
                         </div>
                     </div>
-                    <div class="esp">
+                    <div class="espaciadoLogin">
                     <div class="col-12 form-floating mb-3 position-relative">
                         <input type="password" class="form-control" id="floatingPassword" name="pass" maxlength="10" placeholder="Contraseña" onfocus="enablePasswordButton()" required>
                         <label for="floatingPassword" class="fw-bold">Contraseña</label>
@@ -167,54 +169,64 @@
             </form>
                 <!-- Modal footer -->
                 <div class="modal-footer justify-content-center">
-                    Copyright © Notizen 2024
+                    Copyright © Memos 2024
                 </div>
         </div>
     </div>
 </div>
 
 <!-- Registro-->
-    <div class="modal fade" id="registro">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form action="sesion.php" method="post">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <img src="img/Icon v2.png" alt="Logo" class="logoig">
-                        <input type="submit" value="Crear Cuenta" name="tipo" class="btn" id="btn1">
+<div class="modal fade" id="registro">
+    <div class="modal-dialog">
+        <div class="modal-content row">
+            <form action="sesion.php" method="post">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="col-6">
+                        <img src="img/IconoM.png" alt="Logo" class="logoLogin">
+                        <span class="LogoTextLogin">MEMOS</span>
                     </div>
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="nombre" class="fw-bold form-label">Nombre de usuario:</label>      
-                            <input type="text" name="Nombre" class="form-control" maxlength="50" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$"
-                            title="Uno o más caracteres alfabéticos (mayúsculas o minúsculas)" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="correo" class="fw-bold form-label">Correo:</label>      
-                            <input type="text" name="usuario" class="form-control" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                            title="example@example.dominio" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contraseña" class="fw-bold form-label">Contraseña:</label>
-                            <input type="password" name="pass" id="passw" class="form-control" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-_=+{};:,<.>]).{6,10}$" maxlength="10"
-                            title="- Al menos una letra minúscula. - Al menos una letra mayúscula. - Al menos un dígito. - Una longitud de máximo 10 y mínimo 6 caracteres" required>
-                            <a onclick="togglePasswordReg1()"><span class="material-symbols-outlined btn" id="PassIcon1">visibility_off</span></a>
-                        </div>
-                        <div class="mb-3">
-                            <label for="confirmar" class="fw-bold form-label">Confirmar Contraseña:</label>      
-                            <input type="password" name="confpass" id="confpassw" class="form-control" maxlength="10" required>
-                            <a onclick="togglePasswordReg2()"><span class="material-symbols-outlined btn" id="PassIcon2">visibility_off</span></a>
-                        </div>
+                    <div class="col-4">
+                        <input type="submit" value="Crear Cuenta" name="tipo" id="iniciarSesion">
                     </div>
-                </form>
-                <!-- Modal footer -->
-                <div class="modal-footer justify-content-center">
-                    Copyright © Notizen 2023
                 </div>
+                <!-- Modal body -->
+                <div class="modal-body row" id="contenedorBodyRegistro">
+                    <div class="espaciadoRegistro">
+                        <div class="col-12 form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingNombre" name="Nombre" maxlength="50" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$" title="Uno o más caracteres alfabéticos (mayúsculas o minúsculas)" placeholder="Nombre de usuario" required>
+                            <label for="floatingNombre" class="fw-bold">Nombre de usuario</label>
+                        </div>
+                    </div>
+                    <div class="espaciadoRegistro">
+                        <div class="col-12 form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingCorreo" name="usuario" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="example@example.dominio" placeholder="Correo" required>
+                            <label for="floatingCorreo" class="fw-bold">Correo</label>
+                        </div>
+                    </div>
+                    <div class="espaciadoRegistro">
+                        <div class="col-12 form-floating mb-3 position-relative">
+                            <input type="password" class="form-control" id="floatingPasswordReg" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-_=+{};:,<.>]).{6,10}$" maxlength="10" title="- Al menos una letra minúscula. - Al menos una letra mayúscula. - Al menos un dígito. - Una longitud de máximo 10 y mínimo 6 caracteres" placeholder="Contraseña" onfocus="enablePasswordButtonReg1()" required>
+                            <label for="floatingPasswordReg" class="fw-bold">Contraseña</label>
+                            <span class="material-symbols-outlined btn position-absolute end-0 top-50 translate-middle-y" id="PassIconReg1" onclick="togglePasswordReg1()">visibility_off</span>
+                        </div>
+                    </div>
+                    <div class="espaciadoRegistro">
+                        <div class="col-12 form-floating mb-3 position-relative">
+                            <input type="password" class="form-control" id="floatingConfPasswordReg" name="confpass" maxlength="10" placeholder="Confirmar Contraseña" onfocus="enablePasswordButtonReg2()" required>
+                            <label for="floatingConfPasswordReg" class="fw-bold">Confirmar Contraseña</label>
+                            <span class="material-symbols-outlined btn position-absolute end-0 top-50 translate-middle-y" id="PassIconReg2" onclick="togglePasswordReg2()">visibility_off</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- Modal footer -->
+            <div class="modal-footer justify-content-center">
+                Copyright © Memos 2024
             </div>
         </div>
     </div>
+</div>
 
 </body>
 </html>

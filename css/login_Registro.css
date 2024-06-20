@@ -1,0 +1,178 @@
+/* Boton iniciar sesion */
+#iniciarSesion {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #007bff;
+    color: white;
+    margin-top: 10px;
+}
+#iniciarSesion:hover {
+    background-color: #0056b3;
+}
+
+/* Logo */
+.logoLogin {
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+}
+.LogoTextLogin {
+    margin-left: 0;
+    font-size: 18px;
+    line-height: normal;
+}
+
+/* Div con el correo y contraseña "Espacio" */
+.espaciadoLogin {
+    padding-top: 40px;
+    height: 4%;
+}
+.espaciadoRegistro {
+    padding-top: 20px;
+    height: 5%;
+}
+#contenedorBodyLogin {
+    height: 300px;
+    margin: 0;
+}
+#contenedorBodyRegistro {
+    height: 500px;
+    margin: 0;
+}
+
+/* Estilo para formulario flotante */
+.form-floating > .form-control {
+    padding: 1.5rem 1rem;
+    height: auto;
+    color: #000;
+}
+/* Estilo de los label "Correo" y "Contraseña" */
+.form-floating > label {
+    padding: 0 .75rem;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    transform-origin: left center;
+    margin-left: 0.75rem;
+}
+/* Estilo de los label "Correo" y "Contraseña" cuando se enfoca el campo */
+.form-floating > .form-control:focus + label,
+.form-floating > .form-control:not(:placeholder-shown) + label {
+    font-size: 85%;
+    transform: translateY(-1rem) translateX(.15rem);
+    margin-left: 0;
+}
+/* Estilo ícono de visibilidad de la contraseña */
+.material-symbols-outlined.btn {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: #6c757d;
+    z-index: 10;
+}
+
+/* Ajustar margen solo para el label de "Correo" */
+#floatingInput + label {
+    margin-left: 0.75rem;
+}
+
+/* Reducir espacio entre correo y contraseña */
+.form-floating.mb-3 {
+    margin-bottom: 2rem !important;
+}
+
+/* Posicionamiento para el ícono en el campo de contraseña */
+.position-relative .position-absolute.end-0.top-50.translate-middle-y {
+    right: 1.5rem !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Desactivar icono de ver contraseña */
+#PassIcon,
+#PassIconReg1,
+#PassIconReg2 {
+    display: none;
+}
+
+/* Media queries para tablets */
+@media only screen and (max-width: 768px) {
+    #iniciarSesion {
+        margin-top: 10px;
+        margin-left: -140px;
+        padding: 9px 20px;
+        font-size: 16px;
+    }
+    .logoLogin {
+        width: 50px;
+        height: 50px;
+    }
+    .LogoTextLogin {
+        font-size: 18px;
+    }
+    .espaciadoLogin {
+        padding-top: 15px;
+        height: 48%;
+    }
+    .espaciadoRegistro {
+        padding-top: 25px;
+        height: 25%;
+    }
+    #contenedorBodyLogin {
+        height: 280px;
+    }
+    #contenedorBodyRegistro {
+        height: 550px;
+    }
+    .form-floating.mb-3 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* Media queries para celular */
+@media only screen and (max-width: 480px) {
+    #iniciarSesion {
+        margin-top: 10px;
+        margin-left: -120px;
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+    .logoLogin {
+        width: 35px;
+        height: 35px;
+        
+    }
+    .LogoTextLogin {
+        font-size: 14px;
+        margin-left: -5px;
+    }
+    .espaciadoLogin {
+        padding-top: 10px;
+        height: 50%;
+    }
+    .espaciadoRegistro {
+        padding-top: 20px;
+        height: 25%;
+    }
+    #contenedorBodyLogin {
+        height: 250px;
+    }
+    #contenedorBodyRegistro {
+        height: 500px;
+    }
+    .form-floating.mb-3 {
+        margin-bottom: 1rem !important;
+    }
+    .position-relative .position-absolute.end-0.top-50.translate-middle-y {
+        right: 1rem !important;
+    }
+}
