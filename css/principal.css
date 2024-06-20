@@ -345,3 +345,50 @@ label .nivel3{
 .textU:active{
     color: white;
 }
+
+/* Estilo del botón "Cuenta" y "Cerrar Sesión" */
+.btnAccount {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnAccount:hover {
+    background-color: #002244;
+    color: white;
+}
+
+.btnLogout {
+    background-color: #CC0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnLogout:hover {
+    background-color: #AA0000;
+    color: white;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headerContainer {
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+

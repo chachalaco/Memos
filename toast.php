@@ -7,7 +7,7 @@
             <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
                     <img src="img/iconoM.png" class="rounded me-2 logoig" alt="Logo">
-                    <strong class="me-auto">Memos(Notizen)</strong>
+                    <strong class="me-auto">Memos</strong>
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Cerrar"></button>
                 </div>
                 <div class="toast-body">

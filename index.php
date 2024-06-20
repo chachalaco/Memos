@@ -29,7 +29,7 @@
 </head>
 <body>
 <header>
-        <img src="./img/icon2.png" alt="Logo" class="logo">
+        <img src="./img/IconoM.png" alt="Logo" class="logo">
         <nav>          
           <button data-bs-toggle="modal" data-bs-target="#sesion" class="loginButton">Iniciar Sesión</button>
          
