@@ -1,8 +1,39 @@
+/*Importa la tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+#notizen {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Tipografia de Titulos y parrafos */
+.tipografiaTitulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.tipografiaParrafo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 header {
@@ -81,8 +112,9 @@ nav {
 }
 
 .notizenLogoText {
-    font-size: 24px;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
+    font-size: 24px;
     margin-left: 10px;
     line-height: 30px;
 }
@@ -101,8 +133,6 @@ h1 {
     margin-bottom: 20px;
     padding: 5% 0 0 0;
 }
-
-
 
 
 p {
@@ -340,13 +370,9 @@ li.n1 {
     height: 14vh;
 }
 
-.texto {
-    font-family: Verdana;
-}
 
 .card-header {
     text-align: center;
-    font-family: Verdana;
 }
 
 p.t1 {

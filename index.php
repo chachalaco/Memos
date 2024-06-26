@@ -53,39 +53,39 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h3 align="center" class="textCenter texto" id="notizen">¿Qué es Memos?</h3>
+                <h3 align="center" class="textCenter" id="notizen">¿Qué es Memos?</h3>
             </div>
         </div>
         <hr style="color: #2B2D42">
         <div class="funciones">
-            <div class="texto row pt-5">
+            <div class="row pt-5">
                 <div class="card col-md-5 bg-light mx-auto mb-4">
                     <div class="cardHeader bg-light">
                         <img src="img/img6.png" alt="calendario" class="imgs">
-                        <h3 class="pt-3">Organiza tus tareas</h3>
+                        <h3 class="pt-3 tipografiaTitulo">Organiza tus tareas</h3>
                     </div>
-                    <p class="t1">Guarda tus tareas y visualízalas en un calendario clasificadas por materias.</p>
+                    <p class="t1 tipografiaParrafo">Guarda tus tareas y visualízalas en un calendario clasificadas por materias.</p>
                 </div>
                 <div class="card col-md-5 bg-light mx-auto mb-4">
                     <div class="cardHeader bg-light">
                         <img src="img/img5.png" alt="tiempo" class="imgs">
-                        <h3 class="pt-3">Administra tus tiempos</h3>
+                        <h3 class="pt-3 tipografiaTitulo">Administra tus tiempos</h3>
                     </div>
-                    <p class="t1">Configura notificaciones para tus tareas y gestiona mejor tu tiempo.</p>
+                    <p class="t1 tipografiaParrafo">Configura notificaciones para tus tareas y gestiona mejor tu tiempo.</p>
                 </div>
                 <div class="card col-md-5 bg-light mx-auto mb-4">
                     <div class="cardHeader bg-light">
                         <img src="img/img1.png" alt="habito estudio" class="imgs">
-                        <h3 class="pt-3">Genera un hábito de estudio</h3>
+                        <h3 class="pt-3 tipografiaTitulo">Genera un hábito de estudio</h3>
                     </div>
-                    <p class="t1">Utiliza la <i>Técnica Pomodoro</i> para mantenerte enfocado al realizar tus tareas.</p>
+                    <p class="t1 tipografiaParrafo">Utiliza la <i>Técnica Pomodoro</i> para mantenerte enfocado al realizar tus tareas.</p>
                 </div>
                 <div class="card col-md-5 bg-light mx-auto mb-4">
                     <div class="cardHeader bg-light">
                         <img src="img/img2.png" alt="notas" class="imgs">
-                        <h3 class="pt-3">Guarda cosas importantes</h3>
+                        <h3 class="pt-3 tipografiaTitulo">Guarda cosas importantes</h3>
                     </div>
-                    <p class="t1">Con ayuda de las notas podrás guardar información importante y visualizarla en una lista.</p>
+                    <p class="t1 tipografiaParrafo">Con ayuda de las notas podrás guardar información importante y visualizarla en una lista.</p>
                 </div>
             </div>
         </div>
@@ -155,13 +155,13 @@
                     <div class="espaciadoLogin">
                     <div class="col-12 form-floating mb-3">
                         <input id="inputCorre" type="email" class="form-control" id="floatingInput" name="usuario" maxlength="50" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="example@example.dominio" placeholder="Correo" required>
-                        <label for="floatingInput" class="fw-bold">Correo</label>
+                        <label for="floatingInput" class="fw">Correo</label>
                         </div>
                     </div>
                     <div class="espaciadoLogin">
                     <div class="col-12 form-floating mb-3 position-relative">
-                        <input type="password" class="form-control" id="floatingPassword" name="pass" maxlength="10" placeholder="Contraseña" onfocus="enablePasswordButton()" required>
-                        <label for="floatingPassword" class="fw-bold">Contraseña</label>
+                        <input type="password" class="form-control" id="floatingPassword" name="pass" maxlength="20" placeholder="Contraseña" onfocus="enablePasswordButton()" required>
+                        <label for="floatingPassword" class="fw">Contraseña</label>
                         <span class="material-symbols-outlined btn position-absolute end-0 top-50 translate-middle-y" id="PassIcon" onclick="togglePasswordSesion()">visibility_off</span>
                     </div>
                     </div>
@@ -195,26 +195,26 @@
                     <div class="espaciadoRegistro">
                         <div class="col-12 form-floating mb-3">
                             <input type="text" class="form-control" id="floatingNombre" name="Nombre" maxlength="50" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$" title="Uno o más caracteres alfabéticos (mayúsculas o minúsculas)" placeholder="Nombre de usuario" required>
-                            <label for="floatingNombre" class="fw-bold">Nombre de usuario</label>
+                            <label for="floatingNombre" class="fw">Nombre de usuario</label>
                         </div>
                     </div>
                     <div class="espaciadoRegistro">
                         <div class="col-12 form-floating mb-3">
                             <input type="email" class="form-control" id="floatingCorreo" name="usuario" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="example@example.dominio" placeholder="Correo" required>
-                            <label for="floatingCorreo" class="fw-bold">Correo</label>
+                            <label for="floatingCorreo" class="fw">Correo</label>
                         </div>
                     </div>
                     <div class="espaciadoRegistro">
                         <div class="col-12 form-floating mb-3 position-relative">
                             <input type="password" class="form-control" id="floatingPasswordReg" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-_=+{};:,<.>]).{6,10}$" maxlength="20" title="- Al menos una letra minúscula. - Al menos una letra mayúscula. - Al menos un dígito. - Una longitud de máximo 10 y mínimo 6 caracteres" placeholder="Contraseña" onfocus="enablePasswordButtonReg1()" required>
-                            <label for="floatingPasswordReg" class="fw-bold">Contraseña</label>
+                            <label for="floatingPasswordReg" class="fw">Contraseña</label>
                             <span class="material-symbols-outlined btn position-absolute end-0 top-50 translate-middle-y" id="PassIconReg1" onclick="togglePasswordReg1()">visibility_off</span>
                         </div>
                     </div>
                     <div class="espaciadoRegistro">
                         <div class="col-12 form-floating mb-3 position-relative">
-                            <input type="password" class="form-control" id="floatingConfPasswordReg" name="confpass" maxlength="10" placeholder="Confirmar Contraseña" onfocus="enablePasswordButtonReg2()" required>
-                            <label for="floatingConfPasswordReg" class="fw-bold">Confirmar Contraseña</label>
+                            <input type="password" class="form-control" id="floatingConfPasswordReg" name="confpass" maxlength="20" placeholder="Confirmar Contraseña" onfocus="enablePasswordButtonReg2()" required>
+                            <label for="floatingConfPasswordReg" class="fw">Confirmar Contraseña</label>
                             <span class="material-symbols-outlined btn position-absolute end-0 top-50 translate-middle-y" id="PassIconReg2" onclick="togglePasswordReg2()">visibility_off</span>
                         </div>
                     </div>

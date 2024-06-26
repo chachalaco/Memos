@@ -1,59 +1,50 @@
 function togglePasswordSesion() {
-    var passwordInput = document.getElementById("pass");
-    var icon = document.getElementById("PassIcon");
+  var passwordInput = document.getElementById("floatingPassword");
+  var icon = document.getElementById("PassIcon");
 
-    if (passwordInput.type === "password") {
+  if (passwordInput.type === "password") {
       passwordInput.type = "text";
       icon.innerText = "visibility";
-      showPasswordCheckbox.checked = true;
-    } else {
+  } else {
       passwordInput.type = "password";
       icon.innerText = "visibility_off";
-      showPasswordCheckbox.checked = false;
-    }
   }
+}
+
+function enablePasswordButton() {
+  document.getElementById("PassIcon").style.display = "inline-block";
+}
 
 function togglePasswordReg1() {
-    var passwordInput1 = document.getElementById("passw");
-    var icon1 = document.getElementById("PassIcon1");
+  var passwordInput = document.getElementById("floatingPasswordReg");
+  var icon = document.getElementById("PassIconReg1");
 
-    if (passwordInput1.type === "password") {
-      passwordInput1.type = "text";
-      icon1.innerText = "visibility";
-      showPasswordCheckbox.checked = true;
-    } else {
-      passwordInput1.type = "password";
-      icon1.innerText = "visibility_off";
-      showPasswordCheckbox.checked = false;
-    }
+  if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      icon.innerText = "visibility";
+  } else {
+      passwordInput.type = "password";
+      icon.innerText = "visibility_off";
   }
-  
+}
+
+function enablePasswordButtonReg1() {
+  document.getElementById("PassIconReg1").style.display = "inline-block";
+}
+
 function togglePasswordReg2() {
-    var passwordInput2 = document.getElementById("confpassw");
-    var icon2 = document.getElementById("PassIcon2");
+  var passwordInput = document.getElementById("floatingConfPasswordReg");
+  var icon = document.getElementById("PassIconReg2");
 
-    if (passwordInput2.type === "password") {
-      passwordInput2.type = "text";
-      icon2.innerText = "visibility";
-      showPasswordCheckbox.checked = true;
-    } else {
-      passwordInput2.type = "password";
-      icon2.innerText = "visibility_off";
-      showPasswordCheckbox.checked = false;
-    }
+  if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      icon.innerText = "visibility";
+  } else {
+      passwordInput.type = "password";
+      icon.innerText = "visibility_off";
   }
+}
 
-  function togglePasswordReg3() {
-    var passwordInput2 = document.getElementById("epass");
-    var icon2 = document.getElementById("PassIcon3");
-
-    if (passwordInput2.type === "password") {
-      passwordInput2.type = "text";
-      icon2.innerText = "visibility";
-      showPasswordCheckbox.checked = true;
-    } else {
-      passwordInput2.type = "password";
-      icon2.innerText = "visibility_off";
-      showPasswordCheckbox.checked = false;
-    }
-  }
+function enablePasswordButtonReg2() {
+  document.getElementById("PassIconReg2").style.display = "inline-block";
+}

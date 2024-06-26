@@ -9,8 +9,26 @@
     background-color: #007bff;
     color: white;
     margin-top: 10px;
+    margin-left: -35px;
 }
 #iniciarSesion:hover {
+    background-color: #0056b3;
+}
+
+/* Boton Registro */
+#Registro {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #007bff;
+    color: white;
+    margin-top: 10px;
+    margin-left: -38px;
+}
+#Registro:hover {
     background-color: #0056b3;
 }
 
@@ -21,6 +39,8 @@
     margin-left: 10px;
 }
 .LogoTextLogin {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
     margin-left: 0;
     font-size: 18px;
     line-height: normal;
@@ -108,7 +128,13 @@
 @media only screen and (max-width: 768px) {
     #iniciarSesion {
         margin-top: 10px;
-        margin-left: -140px;
+        margin-left: -160px;
+        padding: 9px 20px;
+        font-size: 16px;
+    }
+    #Registro {
+        margin-top: 10px;
+        margin-left: -160px;
         padding: 9px 20px;
         font-size: 16px;
     }
@@ -146,6 +172,12 @@
         padding: 8px 15px;
         font-size: 13px;
     }
+    #Registro {
+        margin-top: 10px;
+        margin-left: -125px;
+        padding: 8px 15px;
+        font-size: 13px;
+    }
     .logoLogin {
         width: 35px;
         height: 35px;
@@ -174,34 +206,5 @@
     }
     .position-relative .position-absolute.end-0.top-50.translate-middle-y {
         right: 1rem !important;
-    }
-}
-
-/* Media queries para cuando se hace mucho zoom */
-@media only screen and (min-width: 100px) and (max-width: 480px) {
-    .modal-header {
-        flex-direction: column;
-        align-items: center;
-    }
-    .modal-header .col-6, .modal-header .col-4 {
-        text-align: center;
-    }
-    .modal-header .col-4 {
-        margin-top: 10px;
-    }
-    #iniciarSesion {
-        margin-left: 0;
-        margin-top: 10px;
-        padding: 8px 15px;
-        font-size: 13px;
-        display: inline-block;
-    }
-    .logoLogin {
-        width: 35px;
-        height: 35px;
-    }
-    .LogoTextLogin {
-        font-size: 14px;
-        margin-left: -5px;
     }
 }
