@@ -67,8 +67,8 @@
         
         $sql = "SELECT idNota, Descripcion, Color FROM nota
         WHERE idUsuario = $usuario
-        ORDER BY fechaCreacion DESC
-        LIMIT 10;";
+        ORDER BY fechaAgendada ASC
+        LIMIT 20;";
 
         // Este if verifica si hay un error al mostrar los datos
         if(($result = $conexion->query($sql)) === FALSE) {
@@ -84,7 +84,7 @@
                 </div>
                 <div class="card-footer bg-light text-muted">
                     <div class="row">
-                        <div class="col-6">
+                        <div style="display: flex;" class="col-4">
                             <form action="notas.php" method="post" style="margin-bottom: 0px;">
                                 <input type="hidden" value="3" name="tipo">
                                 <input type="hidden" value="'. $a .'" name="esI">
@@ -92,7 +92,7 @@
                                 <button type="submit" class="btn material-symbols-outlined" id="btn">delete_forever</button>
                             </form>    
                         </div>
-                        <div class="col-6">
+                        <div class="col-4">
                             <form action="notas.php" method="post" style="margin-bottom: 0px;">
                                 <input type="hidden" value="7" name="tipo">
                                 <input type="hidden" value="'. $a .'" name="esI">
@@ -100,7 +100,7 @@
                                 <button type="submit" class="btn material-symbols-outlined" id="btn">local_florist</button>
                             </form>    
                         </div>
-                        <div class="col-6 text-end">
+                        <div class="col-4 text-end">
                             <form action="notas.php" method="post" style="margin-bottom: 0px;">
                                 <input type="hidden" value="5" name="tipo">
                                 <input type="hidden" value="'. $a .'" name="esI">
@@ -256,7 +256,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Sesión de Estudio</title>
-            <link rel="icon" href="img/Icon v2.png">
+            <link rel="icon" href="img/iconoM.png">
 
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
@@ -319,27 +319,27 @@
 
             <div id="contenedor" class="col-lg-6 mt-5 mb-2">
                 <!-- Nueva sección de instrucciones sobre la técnica Pomodoro -->
-            <div class="col-12 my-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Hacer pomodoros</h2>
-                    </div>
-                    <div class="card-body">
-                        <p>La técnica Pomodoro es un método de gestión del tiempo para dividir tu trabajo en intervalos, recomendamos 25 minutos de trabajo y 5 minutos de descanso. Aquí los pasos:</p>
-                        <ol>
-                            <li>Decide la tarea que vas a realizar.</li>
-                            <li>Corre el cronometro (un "Pomodoro").</li>
-                            <li>Trabaja en la tarea hasta que el cronometro llegue a los 25 minutos.</li>
-                            <li>Toma un breve descanso (5 minutos).</li>
-                            <li>Después de cuatro "Pomodoros", toma un descanso más largo (15-30 minutos).</li>
-                        </ol>
-                        <p>Utiliza los controles de reproducción y pausa para gestionar tus Pomodoros y asegúrate de tomar los descansos necesarios para mantenerte productivo :)</p>
+                <div class="col-12 my-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Hacer pomodoros</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>La técnica Pomodoro es un método de gestión del tiempo para dividir tu trabajo en intervalos, recomendamos 25 minutos de trabajo y 5 minutos de descanso. Aquí los pasos:</p>
+                            <ol>
+                                <li>Decide la tarea que vas a realizar.</li>
+                                <li>Corre el cronometro (un "Pomodoro").</li>
+                                <li>Trabaja en la tarea hasta que el cronometro llegue a los 25 minutos.</li>
+                                <li>Toma un breve descanso (5 minutos).</li>
+                                <li>Después de cuatro "Pomodoros", toma un descanso más largo (15-30 minutos).</li>
+                            </ol>
+                            <p>Utiliza los controles de reproducción y pausa para gestionar tus Pomodoros y asegúrate de tomar los descansos necesarios para mantenerte productivo :)</p>
+                        </div>
                     </div>
                 </div>
+                <!-- Fin de la sección de instrucciones sobre la técnica Pomodoro -->
             </div>
-            <!-- Fin de la sección de instrucciones sobre la técnica Pomodoro -->
-
-            </div>
+            
             <div class="col-lg-6 pt-5 mb-2">
                 <div class="pt-4">
                     <header>
