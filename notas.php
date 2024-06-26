@@ -311,7 +311,7 @@
             <div id="display" class="h2 col-12 text-center">00:00</div>
 
             <div class="col-6 text-end">
-                <a class="btn bx bx-stop-circle iconom" onclick="stopall()"></a>
+                <a class="btn bx bx-stop-circle iconom" onclick="stop()"></a>
             </div>
             <div class="col-6 text-start">
                 <a id="play-pause" class="btn bx bx-play-circle iconom" onclick="playPause()"></a>
