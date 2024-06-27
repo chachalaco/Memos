@@ -79,33 +79,33 @@
         
         while ($allnotas = mysqli_fetch_assoc($result)) {
             echo '
-                <div class="card-body">
+                <div class="card-body" id="descripcionNota">
                     <div class="mb-1" >' . $allnotas["Descripcion"] . '</div>
                 </div>
-                <div class="card-footer bg-light text-muted">
-                    <div class="row">
-                        <div style="display: flex;" class="col-4">
-                            <form action="notas.php" method="post" style="margin-bottom: 0px;">
+                <div>
+                    <div class="row" id="diseñoNota">
+                        <div class="col iconosNota">
+                            <form action="notas.php" method="post" style="margin-bottom: 0;">
                                 <input type="hidden" value="3" name="tipo">
                                 <input type="hidden" value="'. $a .'" name="esI">
                                 <input type="hidden" value="'. $allnotas["idNota"] .'" name="idNota">
-                                <button type="submit" class="btn material-symbols-outlined" id="btn">delete_forever</button>
+                                <button type="submit" class="btn material-symbols-outlined" id="btnEliminar">delete_forever</button>
                             </form>    
                         </div>
-                        <div class="col-4">
-                            <form action="notas.php" method="post" style="margin-bottom: 0px;">
+                        <div class="col iconosNota">
+                            <form action="notas.php" method="post" style="margin-bottom: 0;">
                                 <input type="hidden" value="7" name="tipo">
                                 <input type="hidden" value="'. $a .'" name="esI">
                                 <input type="hidden" value="'. $allnotas["idNota"] .'" name="idNota">
-                                <button type="submit" class="btn material-symbols-outlined" id="btn">local_florist</button>
+                                <button type="submit" class="btn material-symbols-outlined" id="btnFlor">local_florist</button>
                             </form>    
                         </div>
-                        <div class="col-4 text-end">
-                            <form action="notas.php" method="post" style="margin-bottom: 0px;">
+                        <div class="col iconosNota">
+                            <form action="notas.php" method="post" style="margin-bottom: 0;">
                                 <input type="hidden" value="5" name="tipo">
                                 <input type="hidden" value="'. $a .'" name="esI">
                                 <input type="hidden" value="'. $allnotas["idNota"] .'" name="idNota">
-                                <button type="submit" class="btn material-symbols-outlined" id="btn">edit</button>
+                                <button type="submit" class="btn material-symbols-outlined" id="btnEditar">edit</button>
                             </form>
                         </div>
                     </div>
