@@ -4,6 +4,7 @@ include "conexiondb.php";
 include "toast.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   
     $idUsuario = $_POST['idUsuario'];
     $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
@@ -17,9 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssi", $nombre, $correo, $idUsuario);
 
     if ($stmt->execute()) {
-        $toastmensaje = toast(TRUE, "Datos actualizados correctamente");
+        $toastmensaje = toast(TRUE, "Nombre de usuario actualizado correctamente.");
         $_SESSION["toastmesaje"] = $toastmensaje;
-        header('location: principal.php');
+        // setcookie('notification', 'Your notification message');
+
+        header('location: index.php');
         exit();
     } else {
         echo "Error al actualizar los datos: " . $stmt->error;

@@ -100,9 +100,10 @@ if (isset($_SESSION["usuario"])) {
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" value="<?php echo $nombre; ?>" required>
                 <label for="correo">Correo:</label>
-                <input type="email" name="correo" value="<?php echo $correo; ?>" required><br>
+                <input type="email" name="correo" value="<?php echo $correo; ?>" required>
                 <button type="submit" class="btn btn-primary">Actualizar</button>
             </form>
+            <p class="alerta">¡Al actualizar los campos deberás volver a iniciar sesión!</p>
         </div>
 
         <div id="updatePassword" class="section">
