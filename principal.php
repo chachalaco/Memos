@@ -124,9 +124,8 @@ if (isset($_SESSION["toastmesaje"])) {
 </div>
 
 
-
-  <!-- Aqui mostramos nuestro calendario y nuestras notas -->
-  <div class="container pt-5">
+    <!-- Aqui mostramos nuestro calendario y nuestras notas -->
+    <div class="container pt-5">
     <div class="row">
       <div class="col-lg-9 mb-3">
         <div id='calendar'></div>
@@ -135,17 +134,22 @@ if (isset($_SESSION["toastmesaje"])) {
 
       </div>
       <div class="col-lg-3">
-        <div class="container card">
-          <div class="row card-header">
-            <div class="col-8">Notas</div>
-            <div class=" col-4 text-end" id="ico"><a href="#creanota" data-bs-toggle="modal" class="btn material-symbols-outlined" id="btn">add</a></div>
-
-            <?php require "notas.php";
-            load($conexion, 0); ?>
-
+      <!-- Aqui se muestran las notas (la parte de crear las notas) -->
+      <div class="container card">
+        <div class="row card-header" id="notasHeader">
+          <div class="col-6 text-start">Notas</div>
+          <div class="col-6 text-end" id="addButtonArea">
+            <a href="#creanota" data-bs-toggle="modal" class="btn" id="btnAdd">
+              <span class="btnText">Crear Nota</span>
+              <span class="material-symbols-outlined">add</span>
+            </a>
           </div>
-
         </div>
+        <div class="card-body" id="descripcionNota">
+          <?php require "notas.php";
+          load($conexion, 0); ?>
+        </div>
+      </div>
         <div class="container card mt-3">
           <div class="row card-header">
             <div class="col-12">Elige un evento</div>
@@ -162,7 +166,6 @@ if (isset($_SESSION["toastmesaje"])) {
         </div>
       </div>
     </div>
-
 
 
     <!-- Crear notas rapidas -->

@@ -392,3 +392,88 @@ label .nivel3{
     padding: 15px 0;
 }
 
+/* Diseño de los iconos Nota */
+#diseñoNota {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: -1px; 
+    margin-bottom: -20px;
+    background-color: transparent; 
+}
+
+.iconosNota {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.material-symbols-outlined {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+/* Estilos adicionales para los botones */
+.iconosNota button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px; 
+}
+
+/* Eliminar cualquier borde residual */
+.card-body,
+.card-footer,
+#diseñoNota {
+    border: none !important;
+}
+
+/* Estilos para el botón de "Agregar Nota" */
+#notasHeader {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#notasHeader .col-6 {
+    font-weight: bold;
+}
+
+#addButtonArea {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#btnAdd {
+    background-color: #003366;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+}
+
+#btnAdd:hover {
+    background-color: #002244;
+}
+
+#btnAdd .material-symbols-outlined {
+    font-size: 24px;
+    margin-left: 5px; 
+}
+
+#btnAdd .btnText {
+    font-size: 14px;
+}
+
+#descripcionNota{
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
